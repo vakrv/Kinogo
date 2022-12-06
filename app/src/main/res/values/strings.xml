@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kinogo</string>
-    <string name="click">Click!</string>
+    <string name="click">click</string>
+    <string name="copy">copy</string>
 </resources>
