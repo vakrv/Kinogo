@@ -1,4 +1,6 @@
 package com.example.kinogo.viewModel
 
-class MainViewModel {
+import androidx.lifecycle.ViewModel
+
+class MainViewModel : ViewModel() {
 }
