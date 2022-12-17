@@ -1,4 +1,4 @@
-package repository
+package viewModel
 
 import data.Category
 

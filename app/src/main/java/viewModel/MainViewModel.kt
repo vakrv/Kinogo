@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import data.Repository
 import data.RepositoryImpl
-import repository.AppState
+import java.lang.Thread.sleep
 
 class MainViewModel(
     private val liveDataToObserve: MutableLiveData<AppState> = MutableLiveData(),
@@ -12,20 +12,24 @@ class MainViewModel(
 ) : ViewModel() {
 
 
-    fun getLiveData() = liveDataToObserve;
-    fun getMoviesFromLocalSource() {
-        liveDataToObserve.value = AppState.Loading
-        Thread {
-            Thread.sleep(1000)
-            liveDataToObserve.postValue(AppState.Success(repositoryImpl.getMoviesFromLocalStorage()))
-        }.start()
-    }
+    fun getLiveData() = liveDataToObserve
 
-    fun getMoviesFromRemoteSource() {
+    fun getMovie() = getMoviesFromLocalSource()
+
+    private fun getMoviesFromLocalSource() {
         liveDataToObserve.value = AppState.Loading
+
         Thread {
-            Thread.sleep(1000)
-            liveDataToObserve.postValue(AppState.Success(repositoryImpl.getMoviesFromServer()))
+            sleep(2000)
+          liveDataToObserve.postValue(AppState.Success(repositoryImpl.getMoviesFromServer()))
         }.start()
     }
+//
+//    fun getMoviesFromRemoteSource() {
+//        liveDataToObserve.value = AppState.Loading
+//        Thread {
+//            Thread.sleep(1000)
+//            liveDataToObserve.postValue(AppState.Success(repositoryImpl.getMoviesFromServer()))
+//        }.start()
+//    }
 }
