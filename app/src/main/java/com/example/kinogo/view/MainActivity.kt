@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
                 .replace(com.google.android.material.R.id.container, MainFragment.newInstance())
                 .commitNow()
 
+
         }
     }
 }
