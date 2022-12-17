@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(com.google.android.material.R.id.container, MainFragment.newInstance())
                 .commitNow()
+
         }
     }
 }
