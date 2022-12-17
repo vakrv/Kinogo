@@ -1,6 +1,6 @@
-package com.example.kinogo.repository
+package repository
 
-import com.example.kinogo.data.Category
+import data.Category
 
 sealed class AppState {
     data class Success(val listCategory: List<Category>) : AppState()

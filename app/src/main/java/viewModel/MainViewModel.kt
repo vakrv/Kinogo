@@ -1,10 +1,10 @@
-package com.example.kinogo.viewModel
+package viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.kinogo.data.Repository
-import com.example.kinogo.data.RepositoryImpl
-import com.example.kinogo.repository.AppState
+import data.Repository
+import data.RepositoryImpl
+import repository.AppState
 
 class MainViewModel(
     private val liveDataToObserve: MutableLiveData<AppState> = MutableLiveData(),

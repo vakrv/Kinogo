@@ -1,4 +1,4 @@
-package com.example.kinogo.data
+package data
 
 interface Repository {
 

@@ -1,4 +1,4 @@
-package com.example.kinogo.view
+package view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

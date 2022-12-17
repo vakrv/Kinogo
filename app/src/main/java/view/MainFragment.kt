@@ -1,4 +1,4 @@
-package com.example.kinogo.view
+package view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.kinogo.R
-import com.example.kinogo.viewModel.MainViewModel
+import viewModel.MainViewModel
 
 
 class MainFragment : Fragment() {
