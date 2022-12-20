@@ -1,9 +1,11 @@
 package data
 
+import com.example.kinogo.R
+
 class RepositoryImpl : Repository {
 
     private var movies: List<Movie> = listOf(
-        Movie("Интерстеллар", 0, 86, "08 июль 2014"),//фантастика
+        Movie("Интерстеллар", R.drawable.interstellar , 86, "08 июль 2014"),//фантастика
         Movie("1+1", 1, 88, "07 июл 2011"),//драма
         Movie("Начало", 2, 78, "30 июн 2010"),//фантакстика
         Movie("Джентельмены", 3, 79, "01 июл 2019"),//криминал
