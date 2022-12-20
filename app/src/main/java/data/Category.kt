@@ -1,3 +1,9 @@
 package data
 
-data class Category (val categoryName : String,val movies : List<Movie>)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Category (
+    val categoryName : String,
+    val movies : List<Movie>) : Parcelable
