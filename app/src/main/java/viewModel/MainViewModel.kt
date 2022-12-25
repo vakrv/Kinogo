@@ -21,7 +21,7 @@ class MainViewModel(
 
         Thread {
             sleep(2000)
-          liveDataToObserve.postValue(AppState.Success(repositoryImpl.getMoviesFromServer()))
+          liveDataToObserve.postValue(AppState.Success())
         }.start()
     }
 //
